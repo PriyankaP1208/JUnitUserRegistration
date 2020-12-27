@@ -67,4 +67,20 @@ public class UserRegistration {
             return "SAD";
         }
     }
+    public String Password()
+    {
+        String pass;
+        System.out.println("Enter Phone");
+        pass=sc.nextLine();
+        if(Pattern.matches("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])",pass))
+        {
+            System.out.println("Valid Password");
+            return "HAPPY";
+        }
+        else
+        {
+            System.out.println("Invalid Password");
+            return "SAD";
+        }
+    }
 }
