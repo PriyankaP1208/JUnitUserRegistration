@@ -35,4 +35,20 @@ public class UserRegistration {
             return "SAD";
         }
     }
+    public String Email()
+    {
+        String email;
+        System.out.println("Enter Email:");
+        email=sc.nextLine();
+        if(Pattern.matches("[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$",email))
+        {
+            System.out.println("Valid Email");
+            return "HAPPY";
+        }
+        else
+        {
+            System.out.println("Invalid Email");
+            return "SAD";
+        }
+    }
 }
