@@ -19,4 +19,20 @@ public class UserRegistration {
             return "SAD";
         }
     }
+    public String LastName()
+    {
+        String lname;
+        System.out.println("Enter Last name:");
+        lname=sc.nextLine();
+        if(Pattern.matches("[A-Z][a-z]{3,}",lname))
+        {
+            System.out.println("Valid Last Name");
+            return "HAPPY";
+        }
+        else
+        {
+            System.out.println("Invalid Last Name");
+            return "SAD";
+        }
+    }
 }
