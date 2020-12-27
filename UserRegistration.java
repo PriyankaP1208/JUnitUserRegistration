@@ -51,4 +51,20 @@ public class UserRegistration {
             return "SAD";
         }
     }
+    public String Phone()
+    {
+        String phone;
+        System.out.println("Enter Phone");
+        phone=sc.nextLine();
+        if(Pattern.matches("[0-9]{2}[ ]{1}[1-9]{1}[0-9]{9}",phone))
+        {
+            System.out.println("Valid Phone");
+            return "HAPPY";
+        }
+        else
+        {
+            System.out.println("Invalid Phone");
+            return "SAD";
+        }
+    }
 }
