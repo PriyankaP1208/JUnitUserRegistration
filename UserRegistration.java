@@ -72,7 +72,7 @@ public class UserRegistration {
         String pass;
         System.out.println("Enter Phone");
         pass=sc.nextLine();
-        if(Pattern.matches("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])",pass))
+        if(Pattern.matches("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,32}$",pass))
         {
             System.out.println("Valid Password");
             return "HAPPY";
