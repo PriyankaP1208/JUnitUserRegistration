@@ -1,3 +1,4 @@
+import com.UserRegistrationProblem.InvalidUserException;
 import com.UserRegistrationProblem.UserRegistration;
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
@@ -27,7 +28,7 @@ public class EmailValidator {
     }
 
     @Test
-    public void givenEmail_WhenProper_ShouldReturnHappy() {
+    public void givenEmail_WhenProper_ShouldReturnHappy() throws InvalidUserException {
         UserRegistration user=new UserRegistration();
         String result1=user.Email(this.result);
         Assert.assertThat(result, CoreMatchers.is("HAPPY"));
